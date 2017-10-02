@@ -888,7 +888,7 @@ void CG_DrawWeaponSelect( void ) {
 				CG_DrawPic(holdX, y + 10 + yOffset, smallIconSize * cgs.widthRatioCoef, smallIconSize, media.gfx.interface.weaponIcons[i]);
 
 
-			holdX += (smallIconSize + pad);
+			holdX += (smallIconSize + pad) * cgs.widthRatioCoef;
 		}
 		if ( i == WP_CONCUSSION ) {
 			drewConc = qtrue;
